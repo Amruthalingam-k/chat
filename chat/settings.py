@@ -29,7 +29,7 @@ DEBUG = True
 ABLY_KEY = os.environ['ABLY_KEY']
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
