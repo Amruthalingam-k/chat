@@ -1,0 +1,105 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="{% static '' %}assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="main-chat flex">
+            <div class="container nav">
+                <div class="nav-child hover-scale selected" id="chat-nav" data-heading="Chat" data-area="chat-message" >Chat</div>
+                <div class="nav-child hover-scale" id="files-nav" data-heading="Files"  data-area="files-message" >Files</div>
+                <div class="nav-child hover-scale" id="certificate-nav" data-heading="Certificate"  data-area="certificate-message"  >Certificate</div>
+            </div>
+            <div class="message-container">
+                <div class="header">
+                    <div class="profile-pic" style="background-image: url('assets/images/user.svg');" ></div>
+    <!-- change to red for offline -->
+    <div class="online" style=" background-color: rgb(110, 236, 162); "></div>
+  
+
+                    <div class="name">Amruth</div>
+                    <div class="selected" id="selected-section-heading" >Chat</div>
+                </div>
+                <div class="container  chat " id="chat-message">
+                   
+                    <div class="message-area" id="message_area_chat">
+                        <div class="chat-date hover-scale" data-date="06/05/2021" >06/05/2021</div>
+                        <div class="chat-from hover-scale" data-time="9.30 pm" >
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                        <div class="chat-to hover-scale" data-time="9.30 pm">
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                    </div>
+                    <div class="type-are">
+                        <input type="text" name="message" id="input-message-chat">
+                        <div class="send-button hover-scale" id="chat_message_send" ></div>
+                    </div>
+                </div>
+    
+                <div class="container files no-display" id="files-message">
+                   
+                    <div class="message-area" id="message_area">
+                        <div class="chat-date hover-scale" data-date="06/05/2021" >06/05/2021</div>
+                        <div class="chat-from hover-scale" data-time="9.30 pm" >
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                        <div class="chat-to hover-scale" data-time="9.30 pm">
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                    </div>
+                    <div class="type-are">
+                        <input type="text" name="message" id="input-message-file">
+                        <div class="send-button hover-scale"></div>
+                    </div>
+                </div>
+    
+                <div class="container certificate no-display" id="certificate-message">
+                   
+                    <div class="message-area" id="message_area">
+                        <div class="chat-date hover-scale" data-date="06/05/2021" >06/05/2021</div>
+                        <div class="chat-from hover-scale" data-time="9.30 pm" >
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                        <div class="chat-to hover-scale" data-time="9.30 pm">
+                            <div class="message">Hai</div>
+                            <div class="time">9.30 pm</div>
+                        </div>
+                    </div>
+                    <div class="type-are">
+                        <input type="text" name="message" id="input-message-certificate">
+                        <div class="send-button hover-scale"></div>
+                    </div>
+                </div>
+            </div>
+          
+
+
+        </div>
+        <script lang="text/javascript" src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+        <script src="{% static '' %}assets/js/base.js" async defer></script>
+        <script src="{% static '' %}assets/js/chat.js" async defer></script>
+
+    </body>
+</html>
