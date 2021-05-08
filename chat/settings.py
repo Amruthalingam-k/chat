@@ -26,6 +26,9 @@ SECRET_KEY = 'sx(kww!*9ct8fb3d2ic-$%93ln)fm9gik)%bb=#wzmc_6yj%vi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ABLY_KEY = os.environ['ABLY_KEY']
+
+
 ALLOWED_HOSTS = []
 
 
