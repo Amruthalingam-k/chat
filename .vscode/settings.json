@@ -1,3 +1,13 @@
 {
-    "python.pythonPath": "/Users/amruthalingamk/envs/chat/bin/python"
+    "python.pythonPath": "/Users/amruthalingamk/envs/chat/bin/python",
+    "emeraldwalk.runonsave":{
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": "../frontend/",
+                "cmd": "cd ${workspaceFolder}/frontend && npm run build"
+            }
+        ]
+    }
+
 }

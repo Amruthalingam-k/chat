@@ -20,7 +20,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="main-chat flex">
+        <!-- <div class="main-chat flex">
             <div class="container nav">
                 <div class="nav-child hover-scale selected" id="chat-nav" data-heading="Chat" data-area="chat-message" >Chat</div>
                 <div class="nav-child hover-scale" id="files-nav" data-heading="Files"  data-area="files-message" >Files</div>
@@ -29,7 +29,7 @@
             <div class="message-container">
                 <div class="header">
                     <div class="profile-pic" style="background-image: url('assets/images/user.svg');" ></div>
-    <!-- change to red for offline -->
+  
     <div class="online" style=" background-color: rgb(110, 236, 162); "></div>
   
 
@@ -96,8 +96,8 @@
           
 
 
-        </div>
-
+        </div> -->
+<div id="root"></div>
         <script>
             var ABLY_KEY = '{{ABLY_KEY}}'
         </script>
@@ -105,6 +105,6 @@
         <script lang="text/javascript" src="https://cdn.ably.io/lib/ably.min-1.js"></script>
         <script src="{% static '' %}assets/js/base.js" async defer></script>
         <script src="{% static '' %}assets/js/chat.js" async defer></script>
-
+        <script src="{% static '' %}assets/js/main.js"></script>
     </body>
 </html>

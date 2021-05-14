@@ -2,7 +2,7 @@
 $font-color: white;
 $nav-color:rgb(78, 59, 59);
 $nav-color-selected:rgb(221, 98, 98);
-
+$nav-color-selected-background:white;
 *{
     margin: 0px;
 }
@@ -45,13 +45,13 @@ $nav-color-selected:rgb(221, 98, 98);
   
 }
 .message-container{
-    width: 90%;
+    width: 100%;
 
     .container{
         display: flex;
         flex-direction: column;
         background-image: url('../images/4907157.jpg');
-        height: 90vh;
+        height: 100vh;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -80,6 +80,13 @@ $nav-color-selected:rgb(221, 98, 98);
     border-radius: 50%;
     display: inline-block; 
     margin-right: 5px;
+
+    &.on{
+        background-color: rgb(110, 236, 162);
+    }
+    &.off{
+        background-color: #46424285;
+    }
 }
 
 .name{
@@ -87,10 +94,26 @@ $nav-color-selected:rgb(221, 98, 98);
     
    
 }
-.selected{
-   margin: auto;
-   color: $font-color;
+.header-wrapper{
+    flex-grow: 1;
 }
+.header{
+    justify-content:space-evenly;
+    p{
+        cursor: pointer;
+        color: $font-color;
+    }
+    .selected{
+       
+       color: $nav-color-selected;
+       
+       background: $nav-color-selected-background;
+       padding: 10px;
+       border-radius: 10px;
+       clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+     }
+}
+
 
 .message-area{
     display: flex;
@@ -155,7 +178,7 @@ $nav-color-selected:rgb(221, 98, 98);
     input{
         padding-left: 10px;
         color: $font-color;
-        width: 85vw;
+        width: 95vw;
         height: 30px;
         // border: none;
         border-width: 1px;
